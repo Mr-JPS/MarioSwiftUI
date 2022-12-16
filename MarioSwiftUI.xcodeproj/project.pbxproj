@@ -11,6 +11,9 @@
 		E8436D8D294C9B69007368A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8436D8C294C9B69007368A4 /* ContentView.swift */; };
 		E8436D8F294C9B6A007368A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8436D8E294C9B6A007368A4 /* Assets.xcassets */; };
 		E8436D92294C9B6A007368A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8436D91294C9B6A007368A4 /* Preview Assets.xcassets */; };
+		E8436D99294C9B8A007368A4 /* characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8436D98294C9B8A007368A4 /* characters.swift */; };
+		E8436D9E294CA286007368A4 /* MarioParty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8436D9D294CA286007368A4 /* MarioParty.ttf */; };
+		E8436DA1294CA9BB007368A4 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8436DA0294CA9BB007368A4 /* FontsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		E8436D8C294C9B69007368A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8436D8E294C9B6A007368A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8436D91294C9B6A007368A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8436D98294C9B8A007368A4 /* characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characters.swift; sourceTree = "<group>"; };
+		E8436D9B294CA178007368A4 /* MarioParty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MarioParty.ttf; path = "../../../SYNTAX/FONTS MIX/mario_party_hudson/MarioParty.ttf"; sourceTree = "<group>"; };
+		E8436D9D294CA286007368A4 /* MarioParty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarioParty.ttf; sourceTree = "<group>"; };
+		E8436D9F294CA56D007368A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E8436DA0294CA9BB007368A4 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		E8436D89294C9B69007368A4 /* MarioSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E8436D9F294CA56D007368A4 /* Info.plist */,
+				E8436D9C294CA228007368A4 /* Fonts */,
 				E8436D8A294C9B69007368A4 /* MarioSwiftUIApp.swift */,
 				E8436D8C294C9B69007368A4 /* ContentView.swift */,
+				E8436D98294C9B8A007368A4 /* characters.swift */,
 				E8436D8E294C9B6A007368A4 /* Assets.xcassets */,
 				E8436D90294C9B6A007368A4 /* Preview Content */,
 			);
@@ -62,9 +73,19 @@
 		E8436D90294C9B6A007368A4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E8436D9B294CA178007368A4 /* MarioParty.ttf */,
 				E8436D91294C9B6A007368A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8436D9C294CA228007368A4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E8436D9D294CA286007368A4 /* MarioParty.ttf */,
+				E8436DA0294CA9BB007368A4 /* FontsManager.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8436D9E294CA286007368A4 /* MarioParty.ttf in Resources */,
 				E8436D92294C9B6A007368A4 /* Preview Assets.xcassets in Resources */,
 				E8436D8F294C9B6A007368A4 /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +161,8 @@
 			files = (
 				E8436D8D294C9B69007368A4 /* ContentView.swift in Sources */,
 				E8436D8B294C9B69007368A4 /* MarioSwiftUIApp.swift in Sources */,
+				E8436DA1294CA9BB007368A4 /* FontsManager.swift in Sources */,
+				E8436D99294C9B8A007368A4 /* characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +293,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MarioSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarioSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +322,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MarioSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarioSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
